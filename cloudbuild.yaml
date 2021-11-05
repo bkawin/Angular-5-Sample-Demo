@@ -13,10 +13,5 @@ steps:
  - |
    name: "gcr.io/cloud-builders/gcloud"
    args:
-   [
-    "gsutil",
-    "cp",
-    "dist",
-    "gs://sampleeee",
-   ]
+   ["gsutil","cp","dist","gs://sampleeee"]
 
