@@ -10,8 +10,8 @@ steps:
    args: [run, ng, "--", build, "--prod"]
 
  # upload newly pushed files (for frontend)
- - |
-   name: "gcr.io/cloud-builders/gcloud"
-   args:
-   ["gsutil","cp","dist","gs://sampleeee"]
+ #- |
+  # name: "gcr.io/cloud-builders/gcloud"
+   #args:
+  # ["gsutil","cp","dist","gs://sampleeee"]
 
