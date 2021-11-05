@@ -1,17 +1,6 @@
 steps:
  # install dependencies for angular app
- - |
-   name: "gcr.io/cloud-builders/npm:node-10.10.0"
-   args: ["install"]
+ - name: "gcr.io/cloud-builders/npm:node-10.10.0"
+   args: ['install']
 
- # build production ready frontend angular app
- - |
-   name: "gcr.io/cloud-builders/npm:node-10.10.0"
-   args: [run, ng, "--", build, "--prod"]
-
- # upload newly pushed files (for frontend)
- #- |
-  # name: "gcr.io/cloud-builders/gcloud"
-   #args:
-  # ["gsutil","cp","dist","gs://sampleeee"]
-
+ 
