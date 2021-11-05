@@ -14,9 +14,7 @@ steps:
    name: "gcr.io/cloud-builders/gcloud"
    args:
    [
-    "compute",
-    "scp",
-    "--recurse",
+    "gsutil"
     "dist",
     "gs://sampleeee",
    ]
